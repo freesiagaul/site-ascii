@@ -14,7 +14,7 @@ Geocities-ASCII Themed Site <br>
 
 <div align=left><h2>Why?</h2>
 
-This whole thing started when I did HackClub and made a small PCB business card. I didn't know what to add, so I put an ASCII art image of myself on it. (Fig. 1)
+This whole thing started when I did HackClub and made a small NFC-based PCB business card. I didn't know what to add, so I put an ASCII art image of myself on it. (Fig. 1)
 
 ![Fig. 1](nfc/cardimg.png)
 
