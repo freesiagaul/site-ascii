@@ -10,7 +10,7 @@
 Geocities-ASCII Themed Site <br>
 (Because I can.)
 
-<div align=center><a href="freesia.neocities.org">[My Corner of the Web]</a>
+<div align=center><a href="https://freesia.neocities.org">[My Corner of the Web]</a>
 
 <div align=left><h2>Why?</h2>
 
