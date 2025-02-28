@@ -86,6 +86,7 @@ img {
 @media (max-width: 768px) {
   .navbar {
     text-align: center;
+    font-size: 1.8rem;
   }
 
   .navbar .container {
@@ -103,7 +104,6 @@ img {
 }
 
 /* Colors are always better */
-
 .navbar ul li:nth-child(1) a {
   color: var(--purple-text);
   padding: 10px 20px;
@@ -311,6 +311,29 @@ img {
   margin: 20px 0;
 }
 
+.flex-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.flex-footer .left-content {
+  display: flex;
+  align-items: center;
+}
+
+.flex-footer .left-content h1 {
+  margin-right: 20px;
+}
+
+.flex-footer .left-content a {
+  margin-right: 10px;
+}
+
+.flex-footer .right-content {
+  text-align: right;
+}
 /* Utility Classes */
 .container {
   max-width: 1100px;
@@ -333,7 +356,6 @@ img {
 }
 
 /* Buttons */
-
 .btn {
   display: inline-block;
   padding: 13px 20px;
@@ -365,7 +387,6 @@ img {
 }
 
 /* Text Classes */
-
 .text-xxl {
   font-size: 3rem;
   color: var(--primary-text-color);
@@ -510,11 +531,6 @@ img {
     flex-wrap: inline-flex;
   }
 
-  .navbar .hamburger-button {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
   .hero .hero-buttons .btn {
     margin-bottom: 10px;
     display: block;
@@ -570,6 +586,7 @@ img {
 @media (max-width: 1200px) {
   .splashIndex {
     background-size: cover;
+    background-image: url("../images/blackhole.gif");
     background-image: cover;
     background-position: center center;
   }
@@ -581,6 +598,7 @@ img {
   .splashIndex {
     background-size: none;
     background-image: none;
+    background-image: url("../images/blackhole.gif");
     background-repeat: no-repeat;
     font-size: 1.9vh;
   }

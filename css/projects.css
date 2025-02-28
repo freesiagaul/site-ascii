@@ -1,3 +1,10 @@
+/* define what is actually important herew for propj,html to run -- add css for 
+1. feature block
+2. search bar
+3. gridded (use reflog to find the old vers  -
+https://codepen.io/aybukeceylan/pen/yLaqqOL?ref=hackernoon.com
+*/
+
 * {
   box-sizing: border-box;
 }
@@ -34,7 +41,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Example content to demonstrate overflow */
 .content {
   width: 1500px;
   height: 500px;
@@ -158,86 +164,13 @@ img {
   margin-left: 10px;
 }
 
-/* hero-abt */
+/* Feature Classes */
 
-.hero-abt {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  padding: 2.5%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+/* SearchBar Classes */
 
-@media (max-width: 400px) {
-  .container,
-  .flex-gif {
-    flex: 100%;
-  }
-}
+/* Grid Classes */
 
-/* FAQ */
-
-.faq {
-  padding: 40px 0;
-}
-
-.faq-group {
-  border-bottom: 1px solid #ccc;
-  padding: 20px;
-}
-
-.faq .faq-group .faq-group-header {
-  padding: 20px;
-  margin-bottom: 15px;
-  position: relative;
-}
-
-.faq .faq-group .faq-group-header h4 {
-  font-weight: 600;
-  width: 95%;
-}
-
-.faq .faq-group .faq-group-header i {
-  position: absolute;
-  right: 0;
-  top: 35px;
-  font-size: 0.5vw;
-  cursor: pointer;
-}
-
-.faq .faq-group .faq-group-body {
-  display: none;
-}
-
-/* if open*/
-.faq .faq-group .faq-group-body.open {
-  display: block;
-}
-
-.faq .ul.faq-menu {
-  max-width: 400px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #ddd;
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.faq ul.faq-menu li {
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.faq ul.faq-menu li.active {
-  background: var(--primary-color);
-  color: #fff;
-}
+/* Gif Classes */
 
 /* Utility Classes */
 
@@ -308,14 +241,6 @@ img {
   max-width: 1000px;
 
   padding: 0 15px;
-}
-
-/* Card */
-.card {
-  background: #fff;
-  color: #000;
-  border-radius: 10px;
-  padding: 20px;
 }
 
 /* Buttons */
@@ -471,14 +396,15 @@ img {
 
 /* Media Queries */
 
+/* Adjust the media query for responsiveness */
 @media (max-width: 768px) {
-  .hero-abt {
+  .hero {
     flex-direction: column;
     flex-wrap: wrap;
   }
 
-  .hero-abt .container {
-    flex-basis: auto;
+  .hero .container {
+    flex-basis: auto; /* Reset flex-basis for full width on smaller screens */
     min-width: 0;
   }
 }
@@ -495,7 +421,7 @@ img {
     flex-wrap: inline-flex;
   }
 
-  .hero-abt .hero-abt-buttons .btn {
+  .hero .hero-buttons .btn {
     margin-bottom: 10px;
     display: block;
     width: 100%;
@@ -523,17 +449,17 @@ img {
   }
 }
 
-/* Fade splashShrug Screen */
+/* Fade splashIndex Screen */
 
 /* For PC*/
-.splashShrug {
+.splashIndex {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   background: var(--dark-color);
-  background-image: url("../images/ascii-shrug.gif");
+  background-image: url("../images/ascii-jump.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -543,12 +469,12 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2.5vh;
+  font-size: 3vh;
 }
 
 /* Media query for mobile devices */
 @media (max-width: 1200px) {
-  .splashShrug {
+  .splashIndex {
     background-size: cover;
     background-image: cover;
     background-position: center center;
@@ -558,15 +484,15 @@ img {
 /* For very small screens */
 /* Basing the pixel width on whether the animation looks bad in that form or not*/
 @media (max-width: 800px) {
-  .splashShrug {
-    background-size: cover;
-    background-image: cover;
+  .splashIndex {
+    background-size: none;
+    background-image: none;
     background-repeat: no-repeat;
     font-size: 1.9vh;
   }
 }
 
-.splashShrug.display-none {
+.splashIndex.display-none {
   position: fixed;
   opacity: 0;
   top: 0;
@@ -591,3 +517,19 @@ img {
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
 }
+
+/* Extra for About Me */
+/* not being used atm
+  
+  .face {
+    position: absolute;
+    top: 2rem;
+    right: 120rem;
+    width: 1%;
+    height: 25%;
+    background-image: url("../images/ascii-face.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  */
