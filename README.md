@@ -18,7 +18,7 @@ This whole thing started when I did HackClub and made a small NFC-based PCB busi
 
 ![Fig. 1](nfc/cardimg.png)
 
-But then it occured to me, I didn't actually know what I wanted to write to the card. So I decided to follow the cards theme and make an old-style site based on GeoCities, and found <a href="https://github.com/neocities/neocities"> Neocities </a> in the process, an awesome community continuing the tradition of free web hosting.
+But then it occured to me, I didn't actually know what I wanted to write to the card. So I decided to follow the cards theme and make an old-style site based on GeoCities, and found <a href="https://github.com/neocities/neocities"> Neocities </a> in the process, an awesome community continuing the tradition of free web hosting. (If you're wondering, yes! It is so ancient it actually only lets you use HTML/CSS/JS. 🤣)
 <br> <br>
 Making little easter eggs and animations is just charming, and frankly feels like art, so this is super fun! :)
 <br>
