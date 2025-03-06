@@ -2,7 +2,6 @@
 1. feature block
 2. search bar
 3. gridded (use reflog to find the old vers  -
-https://codepen.io/aybukeceylan/pen/yLaqqOL?ref=hackernoon.com
 */
 
 * {
@@ -165,6 +164,24 @@ img {
 }
 
 /* Feature Classes */
+
+/* Video */
+
+.video {
+  padding: 10px 0 40px;
+}
+
+.video-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-preview {
+  margin-bottom: 20px;
+  align-self: auto;
+  display: flex;
+}
 
 /* SearchBar Classes */
 
@@ -449,10 +466,10 @@ img {
   }
 }
 
-/* Fade splashIndex Screen */
+/* Fade splashProj Screen */
 
 /* For PC*/
-.splashIndex {
+.splashProj {
   position: fixed;
   top: 0;
   left: 0;
@@ -474,7 +491,7 @@ img {
 
 /* Media query for mobile devices */
 @media (max-width: 1200px) {
-  .splashIndex {
+  .splashProj {
     background-size: cover;
     background-image: cover;
     background-position: center center;
@@ -484,7 +501,7 @@ img {
 /* For very small screens */
 /* Basing the pixel width on whether the animation looks bad in that form or not*/
 @media (max-width: 800px) {
-  .splashIndex {
+  .splashProj {
     background-size: none;
     background-image: none;
     background-repeat: no-repeat;
@@ -492,7 +509,7 @@ img {
   }
 }
 
-.splashIndex.display-none {
+.splashProj.display-none {
   position: fixed;
   opacity: 0;
   top: 0;

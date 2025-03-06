@@ -34,24 +34,87 @@ body {
   box-sizing: border-box;
 }
 
-/* Example content to demonstrate overflow */
-.content {
-  width: 1500px;
-  height: 500px;
-  background-color: lightblue;
+/* Splash Screen */
+
+/* For PC*/
+.splashIndex {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--dark-color);
+  /*s subject to change gif */
+  background-image: url("../images/ascii-jump.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 200;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vh;
 }
 
-a {
-  text-decoration: none;
-  color: #333;
+/* Media query for mobile devices */
+@media (max-width: 1200px) {
+  .splashIndex {
+    background-size: cover;
+    background-image: url("../images/blackhole.gif");
+    background-image: cover;
+    background-position: center center;
+  }
 }
 
-ul {
-  list-style: none;
+/* For very small screens */
+/* Basing the pixel width on whether the animation looks bad in that form or not*/
+@media (max-width: 800px) {
+  .splashIndex {
+    background-size: none;
+    background-image: none;
+    background-image: url("../images/blackhole.gif");
+    background-repeat: no-repeat;
+    font-size: 1.9vh;
+  }
 }
 
-img {
-  max-width: 100%;
+.splashIndex.display-none {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100;
+  height: 100vh;
+  background: black;
+  z-index: -10;
+  color: white;
+  text-align: center;
+  line-height: 90vh;
+  transition: all 0.5s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+/* Feature */
+.featured {
+  display: flex;
+  display: 2%;
+  justify-content: center;
+  align-items: stretch;
+  padding: 20.5%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Navbar */
@@ -240,7 +303,6 @@ img {
 }
 
 /* Utility Classes */
-
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -319,7 +381,6 @@ img {
 }
 
 /* Buttons */
-
 .btn {
   display: inline-block;
   padding: 13px 20px;
@@ -351,7 +412,6 @@ img {
 }
 
 /* Text Classes */
-
 .text-xxl {
   font-size: 3rem;
   color: var(--primary-text-color);
@@ -413,7 +473,6 @@ img {
 }
 
 /* Background */
-
 .bg-primary {
   background: var(--primary-color);
   color: #fff;
@@ -470,7 +529,6 @@ img {
 }
 
 /* Media Queries */
-
 @media (max-width: 768px) {
   .hero-abt {
     flex-direction: column;
@@ -524,7 +582,6 @@ img {
 }
 
 /* Fade splashShrug Screen */
-
 /* For PC*/
 .splashShrug {
   position: fixed;
