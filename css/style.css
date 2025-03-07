@@ -279,10 +279,6 @@ img {
   margin-bottom: 10px;
 }
 
-.footer ul li {
-  line-height: 2.5;
-}
-
 .footer a {
   color: #ccc;
 }
@@ -295,27 +291,12 @@ img {
 .footer-grid {
   display: grid;
   gap: 30px;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer .card {
-  margin: 20px 30px 30px 0;
-}
-
-.footer input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin: 20px 0;
 }
 
 .flex-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
 }
 
 .flex-footer .left-content {
@@ -323,12 +304,8 @@ img {
   align-items: center;
 }
 
-.flex-footer .left-content h1 {
-  margin-right: 20px;
-}
-
 .flex-footer .left-content a {
-  margin-right: 10px;
+  margin-right: 5rem;
 }
 
 .flex-footer .right-content {
@@ -338,12 +315,10 @@ img {
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 .container-sm {
   max-width: 1000px;
-
   padding: 0 15px;
 }
 
@@ -440,7 +415,7 @@ img {
 }
 
 .rant {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--primary-text-color);
   line-height: 1.4;
   font-weight: normal;
@@ -535,14 +510,6 @@ img {
     margin-bottom: 10px;
     display: block;
     width: 100%;
-  }
-
-  .footer .card {
-    margin-right: 0;
-  }
-
-  .footer .footer-grid > div {
-    text-align: center;
   }
 
   /* Text */

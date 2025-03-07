@@ -215,10 +215,6 @@ img {
   margin-bottom: 10px;
 }
 
-.footer ul li {
-  line-height: 2.5;
-}
-
 .footer a {
   color: #ccc;
 }
@@ -231,22 +227,26 @@ img {
 .footer-grid {
   display: grid;
   gap: 30px;
-  justify-content: center;
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.footer .card {
-  margin: 20px 30px 30px 0;
+.flex-footer .left-content {
+  display: flex;
+  align-items: center;
 }
 
-.footer input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin: 20px 0;
+.flex-footer .left-content a {
+  margin-right: 5rem;
 }
 
+.flex-footer .right-content {
+  text-align: right;
+}
 /* Utility Classes */
 .container {
   max-width: 1100px;
@@ -442,14 +442,6 @@ img {
     margin-bottom: 10px;
     display: block;
     width: 100%;
-  }
-
-  .footer .card {
-    margin-right: 0;
-  }
-
-  .footer .footer-grid > div {
-    text-align: center;
   }
 
   /* Text */
