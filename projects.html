@@ -28,6 +28,10 @@
     <link 
     rel="stylesheet" 
     href="css/projects.css"/>
+    <!-- Transition in text from left css-->
+    <link 
+    rel="stylesheet" 
+    href="css/animate.css"/>
     <link rel="shortcut icon" href="images/favi0.ico" type="image/x-icon"/>
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
@@ -49,7 +53,6 @@
 <body>
   <div class="splashProj"> 
       <h1 class="heading" data-target-resolver>
-
           <!-- Waving gif --> 
           <img src="../images/hackerman.gif">
       </h1> 
@@ -62,7 +65,8 @@
 <script src="js/navbar.js"></script>
 
   <!-- Hero -->
-  <div class="hero">
+  <script defer src="js/animate.js"></script>
+  <div class="hero hide">
     <div class="container">
       <h1 class="text-xxl">Projects</h1>
               <h4 class="text-mid">
@@ -83,22 +87,22 @@
 
 
     <div class="container">
-                  <!-- gridded blocks link to most recent blog posts-->
-              <section class="video bg-black">
-                  <div class="container-sm">
-                      <h2 class="text-xl">
-                          Featured Project
-                      </h2>
-                      <div class="video-content">
-                          <a>
-                            <iframe class="video-preview" width=1000 height=600 src="https://www.youtube.com/embed/F_IDp8Aczss?si=a6ZWcTiG6kqUcNby" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                          </a>
-                      </div>
-                  </div>
-              </section>
-    <!-- Cards -->
+    <section class="video bg-black">
+        <div class="container-sm">
+            <h2 class="text-xl hide">
+                Featured Project
+            </h2>
 
-    <div class="dotted-line"></div>
+            <!-- Video -->
+                <div class="video-preview">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/F_IDp8Aczss?si=a6ZWcTiG6kqUcNby" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+<!-- Cards -->
+
+    <div class="dotted-line hide"></div>
+              </section>
 
       <!-- Footer -->
       <script src="js/footer.js"></script>   

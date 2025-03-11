@@ -8,6 +8,10 @@
     <link 
     rel="stylesheet" 
     href="css/aboutme.css"/>
+       <!-- Transition in text from left css-->
+       <link 
+       rel="stylesheet" 
+       href="css/animate.css"/>
     <link rel="shortcut icon" href="images/favi0.ico" type="image/x-icon"/>
     <!-- Main text used-->
     <link 
@@ -46,7 +50,11 @@
 <!-- Navbar -->
 <script src="js/navbar.js"></script>
 
-<div class="hero-abt">
+<!--Transition text animation-->
+<script defer src="js/animate.js"></script>
+
+<!-- Hero -->
+<div class="hero-abt hide">
   <div class="text-xxl">
     I'm Freesia!
   </div>
@@ -60,17 +68,17 @@
             <br>
 </div>
 
-      <!-- Make like a character stats jojo's thing and animation character -->
+<!-- Make like a character stats jojo's thing and animation character -->
 
   </section>
   
        <!-- FAQ -->
-       <section class="faq bg-faq">
-        <div class="container">
-          <h2 class="text-xxl">FAQ</h2>
-          <ul class="faq-menu">
-          </ul>
-          <div class="faq-content">
+  <section class="faq bg-faq hide">
+    <div class="container">
+      <h2 class="text-xxl">FAQ</h2>
+        <ul class="faq-menu">
+        </ul>
+          <div class="faq-content ">
             <div class="faq-group">
               <div class="faq-group-header">
                 <h4 class="text-lg">
@@ -117,25 +125,23 @@
             </div>
 
   <!-- Project Question -->
-            <div class="faq-group">
-              <div class="faq-group-header">
-                <h4 class="text-lg">
-                  What projects are you working on currently?
-                </h4>
-                <i class="fas fa-plus"></i>
-              </div>
-              <div class="faq-group-body">
-                <p>
-                  <h4 class="text-md fade-in">
-                      Check out my most recently featured in [Projects]!
-                      (I'm also trying to make my toaster oven a PCB reflow oven.)
-                  </h4>
-                </p>
-              </div>
-            </div>
+      <div class="faq-group">
+          <div class="faq-group-header">
+            <h4 class="text-lg">
+              What projects are you working on currently?
+            </h4>
+            <i class="fas fa-plus"></i>
+          </div>
+          <div class="faq-group-body">
+            <p>
+              <h4 class="text-md fade-in">
+                  Check out my most recently featured in [Projects]!
+                  (I'm also trying to make my toaster oven a PCB reflow oven.)
+              </h4>
+            </p>
           </div>
         </div>
-      </section>
+  </section>
 
 
       <!-- Footer -->

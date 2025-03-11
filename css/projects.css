@@ -1,11 +1,6 @@
-/* define what is actually important herew for propj,html to run -- add css for 
-1. feature block
-2. search bar
-3. gridded (use reflog to find the old vers  -
-*/
-
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 @media (max-width: 800px) {
@@ -47,7 +42,6 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: #333;
 }
 
@@ -75,8 +69,9 @@ img {
 /* Hero */
 
 .hero {
-  display: flex;
+  display: grid;
   justify-content: center;
+  align-content: center;
   align-items: stretch;
   padding: 2.5%;
   max-width: 1200px;
@@ -200,21 +195,27 @@ img {
 /* Video */
 
 .video {
-  padding: 10px 0 40px;
-}
-
-.video-content {
-  display: flex;
-  flex-direction: column;
+  padding: 0px 0 40px;
+  display: grid;
+  place-items: center;
   align-items: center;
 }
-
 .video-preview {
-  margin-bottom: 20px;
-  align-self: auto;
-  display: flex;
+  border-radius: 30px;
+  overflow: hidden;
 }
 
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 /* SearchBar Classes */
 
 /* Grid Classes */
@@ -224,7 +225,8 @@ img {
 /* Utility Classes */
 
 .container {
-  max-width: 900px;
+  max-width: 1000px;
+  display: grid;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -234,7 +236,6 @@ img {
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
   overflow-x: hidden;
 }
 
@@ -299,7 +300,6 @@ img {
   padding: 13px 20px;
   background: #333;
   font-weight: 600;
-  text-decoration: none;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -332,7 +332,7 @@ img {
   line-height: 1.2;
   font-weight: 600;
   padding: 10px 20px;
-  display: inline-flex;
+  display: grid;
   margin: 20px auto;
   word-wrap: break-word;
   white-space: nowrap;
@@ -340,6 +340,7 @@ img {
 
 .text-xl {
   font-size: 2.2rem;
+  display: grid;
   color: var(--primary-text-color);
   line-height: 1.4;
   font-weight: normal;

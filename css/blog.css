@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 @media (max-width: 800px) {
@@ -41,7 +42,6 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: #333;
 }
 
