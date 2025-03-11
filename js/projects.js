@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
       splashProj.classList.add("display-none");
     },
     // splashProj timer
-    2250
+    1600
   );
 });
 

@@ -224,9 +224,18 @@ body {
 /* hero-abt */
 
 .hero-abt {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: stretch;
+  padding: 2.5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-abt-left {
+  display: grid;
+  justify-content: left;
+  align-items: left;
   padding: 2.5%;
   max-width: 1200px;
   margin: 0 auto;
