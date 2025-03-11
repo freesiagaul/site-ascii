@@ -35,7 +35,6 @@ body {
 }
 
 /* Splash Screen */
-
 /* For PC*/
 .splashIndex {
   position: fixed;
@@ -302,19 +301,12 @@ body {
   color: #fff;
 }
 
-/* Utility Classes */
+/* Container */
 .container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
-}
-
-.container,
-.container-sm {
-  max-width: 100%;
-  width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 30px;
   overflow-x: hidden;
 }
 
@@ -349,26 +341,6 @@ body {
 
 .footer .card {
   margin: 20px 30px 30px 0;
-}
-
-.footer input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin: 20px 0;
-}
-
-/* Utility Classes */
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.container-sm {
-  max-width: 1000px;
-  padding: 0 15px;
 }
 
 /* Card */
