@@ -35,6 +35,6 @@ This theme was inspired by:
 <ul>
   <li> <a href=https://github.com/schnensch0/zelk> Neocities </li>
   <li> <a href=https://momg.neocities.org/?n=Maureen-Owens&p=43964f5i14427f4i11565f1i46214f1i759f3i65923f2i42545f2i40347f4i41160f4i10975f2i84085f2i290f1i86255f2i64719f2i22150f5i86137f4> These Sick Gifs </li>
-  <li> https://motherfuckingwebsite.com/ </li>
+  <li> <a href=https://motherfuckingwebsite.com/> https://motherfuckingwebsite.com/ </li>
 
 </ul>
