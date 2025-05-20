@@ -51,61 +51,66 @@
 
 <!-- Splash screen-->
 <body>
-  <div class="splashProj"> 
-      <h1 class="heading" data-target-resolver>
-          <!-- Waving gif --> 
-          <img src="../images/hackerman.gif">
-      </h1> 
-    <h1 class="fade-in"> 
-    </div>
-  </body> 
-  </div>
+<div class="splashProj"> 
+    <h1 class="heading" data-target-resolver>
+        <!-- Waving gif --> 
+        <img src="../images/hackermanascii.gif">
+    </h1> 
+    <h1 class="fade-in"></h1>
+</div>
 
 <!-- Navbar -->
 <script src="js/navbar.js"></script>
 
-  <!-- Hero -->
-  <script defer src="js/animate.js"></script>
-  <div class="hero hide">
-    <div class="container">
-      <h1 class="text-xxl">Projects</h1>
-              <h4 class="text-mid">
-                (I make stuff!)
-              </h4>
-              <p class="text-xl">
-                What do you make?
-              </p>
-              
-              <p class="text-md">
-                I've been obsessed with embedded systems recently, so most of my projects at the moment are surrounding that. <!--Though I have worked with: -->
-                <!-- make cool rotating animated thingo here -->
-                  <!-- think like ascii python logo, etc all scrolling horizontal -->
-                <br> <br>
-                <div class="dotted-line"></div>
+<!-- Hero -->
+<script defer src="js/animate.js"></script>
+<div class="hero hide">
+  <div class="container">
+    <h1 class="text-xxl">Projects</h1>
+            <h4 class="text-mid">
+              (I make stuff!)
+            </h4>
+
       </div>
     </div>
 
 
-    <div class="container">
+    <div class="container hide">
+          <div style="display: flex; justify-content: center; align-items: center; width: 100%; margin: 32px 0;">
+            <iframe src="https://pages.codeadam.ca/github-contributions/freesiagaul" width="800" height="190" frameborder="0" allowtransparency id="iframe"></iframe>
+          </div>
+
     <section class="video bg-black">
         <div class="container-sm">
-            <h2 class="text-xl hide">
+            <h2 class="text-xl">
                 Featured Project
             </h2>
-
             <!-- Video -->
                 <div class="video-preview">
                     <div class="video-wrapper">
                       <iframe class="video-preview" width=1000 height=600 src="https://www.youtube.com/embed/F_IDp8Aczss?si=a6ZWcTiG6kqUcNby" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
+</div>
 <!-- Cards -->
 
-    <div class="dotted-line hide"></div>
+    <div class="row">
+      <div class="col">
+        <div class="text-md" style="padding: 10vh">        
+            <div class="text-md">Nice to meet you!<br> <br> I'm Freesia. I'm based in Sydney, Australia.
+              <br> <br>
+              (Website is under construction.)
+            </div>
+          </div>    
+      </div>
+          </div>
+</div>
               </section>
 
-      <!-- Footer -->
-      <script src="js/footer.js"></script>   
-      <script src="js/projects.js"></script>
-  </body>
+
+
+  <!-- Footer -->
+  <script src="js/footer.js"></script>   
+  <script src="js/projects.js"></script>
+</body>
 </html>
