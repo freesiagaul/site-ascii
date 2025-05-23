@@ -12,6 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Loading in the css
   let link = document.createElement("link");
   link.rel = "stylesheet";
-  link.href = "css/footer.css";
+  link.href = "css/style.css";
   document.head.appendChild(link);
 });

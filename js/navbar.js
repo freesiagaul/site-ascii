@@ -12,6 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Load the navbar CSS
   let link = document.createElement("link");
   link.rel = "stylesheet";
-  link.href = "css/navbar.css";
+  link.href = "css/style.css";
   document.head.appendChild(link);
 });
